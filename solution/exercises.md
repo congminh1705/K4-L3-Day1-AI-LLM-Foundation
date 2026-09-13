@@ -27,7 +27,8 @@ mỗi lần trung bình ~350 token đầu ra.
 
 **Ước tính GPT-4o đắt hơn GPT-4o-mini bao nhiêu lần cho workload này? Nêu một
 trường hợp GPT-4o xứng đáng với chi phí và một trường hợp nên dùng mini:**
-> Theo bảng giá trong lab, chi phí được tính như sau: Tổng số lượt gọi mỗi ngày: 10.000 × 3 = 30.000 lượt. Tổng token đầu ra mỗi ngày: 30.000 × 350 = 10.500.000 token. GPT-4o có giá 0,010 USD/1.000 token đầu ra, nên chi phí là: 10.500.000 ÷ 1.000 × 0,010 = 105 USD/ngày. GPT-4o-mini có giá 0,0006 USD/1.000 token đầu ra, nên chi phí là: 10.500.000 ÷ 1.000 × 0,0006 = 6,30 USD/ngày. Tỷ lệ chi phí: 105 ÷ 6,30 ≈ 16,67 lần. Như vậy, chi phí đầu ra của GPT-4o gấp khoảng 16,67 lần GPT-4o-mini với workload này. Phép tính chưa bao gồm chi phí token đầu vào vì đề không cung cấp số lượng. GPT-4o có thể xứng đáng với chi phí khi xử lý yêu cầu khách hàng phức tạp, cần đối chiếu nhiều chính sách và thử nghiệm cho thấy chất lượng tốt hơn rõ rệt. Với các câu hỏi thường gặp như giờ mở cửa hoặc hướng dẫn đặt hàng, em sẽ chọn GPT-4o-mini nếu chất lượng đáp ứng yêu cầu, nhằm tiết kiệm chi phí.
+> Trong phần thực hành, em dùng Gemini 3.6 Flash và Gemini 3.5 Flash-Lite. Nếu tính theo giá Standard của gói trả phí tại ngày 11/09/2026, giả sử mỗi lượt có 350 token đầu ra tính phí, bao gồm cả token suy nghĩ: Tổng token đầu ra mỗi ngày: 10.000 × 3 × 350 = 10.500.000 token. Gemini 3.6 Flash: 10.500.000 ÷ 1.000.000 × 3,75 = 39,375 USD/ngày.Gemini 3.5 Flash-Lite: 10.500.000 ÷ 1.000.000 × 2,50 = 26,25 USD/ngày. Tỷ lệ chi phí: 39,375 ÷ 26,25 = 1,5 lần. Như vậy, với giả định trên, chi phí đầu ra của Gemini 3.6 Flash gấp 1,5 lần Flash-Lite. Phép tính chưa gồm token đầu vào và không phải số tiền thực tế em đã sử dụng. Em sẽ thử Flash cho câu hỏi phức tạp và Flash-Lite cho câu hỏi đơn giản, rồi chọn theo chất lượng phản hồi thực tế.
+
 ---
 
 ## Block 2 — System Prompt & Token (trả lời sau Checkpoint 2)
